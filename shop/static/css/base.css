@@ -42,9 +42,14 @@ a.button.light {
 }
 
 table {
-    width:100%;
+    padding: 0;
+    width: 100%;
     border-spacing:0;
     border-collapse: collapse;
+}
+
+.cart-content {
+    margin: 0 20px;
 }
 
 table th, table td {
@@ -69,7 +74,7 @@ thead th, tbody tr.total {
 }
 
 table.cart {
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 table.cart img {
