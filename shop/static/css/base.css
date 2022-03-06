@@ -33,6 +33,12 @@ a.button.light {
     background:#ededed;
 }
 
+
+.content {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .text-left {
     text-align:left;
 }
@@ -46,10 +52,6 @@ table {
     width: 100%;
     border-spacing:0;
     border-collapse: collapse;
-}
-
-.cart-content {
-    margin: 0 20px;
 }
 
 table th, table td {
@@ -257,6 +259,10 @@ ul.errorlist {
 
 .order-info span {
     float:right;
+}
+
+.order-item {
+    margin-bottom: 5px;
 }
 
 .neg {
