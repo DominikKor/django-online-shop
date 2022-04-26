@@ -8,15 +8,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-18 21:29+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2022-04-26 21:52+0200\n"
+"PO-Revision-Date: 2022-04-26 19:53+0000\n"
+"Last-Translator:   <droko@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: orders/forms.py:9
+#| msgid "Please enter a valid postal code."
+msgid "Please enter a valid German postal code."
+msgstr "Bitte geben Sie eine gültige deutsche Postleitzahl ein."
 
 #: orders/models.py:12
 msgid "first name"
@@ -45,7 +51,7 @@ msgstr "Stadt"
 #: orders/templates/orders/order/create.html:4
 #: orders/templates/orders/order/create.html:7
 msgid "Checkout"
-msgstr ""
+msgstr "Zur Kasse"
 
 #: orders/templates/orders/order/create.html:9
 msgid "Your order"
@@ -58,6 +64,8 @@ msgid ""
 "                        \"%(code)s (%(discount)s%% off)\"\n"
 "                    "
 msgstr ""
+"\n"
+"%(code)s (%(discount)s%% Rabatt)"
 
 #: orders/templates/orders/order/create.html:26
 msgid "Total"
@@ -66,3 +74,7 @@ msgstr "Gesamt"
 #: orders/templates/orders/order/create.html:31
 msgid "Place order"
 msgstr "Bestellen"
+
+#: orders/urls.py:9
+msgid "create/"
+msgstr "neu/"

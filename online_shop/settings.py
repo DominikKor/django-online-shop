@@ -51,6 +51,10 @@ BRAINTREE_CONF = braintree.Configuration(
     BRAINTREE_PRIVATE_KEY,
 )
 
+REDIS_HOST = "localhost"
+REDIS_PORT = 6379
+REDIS_DB = 1
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -65,6 +69,9 @@ INSTALLED_APPS = [
     "orders.apps.OrdersConfig",
     "payment.apps.PaymentConfig",
     "coupons.apps.CouponsConfig",
+    "rosetta",
+    "parler",
+    "localflavor",
 ]
 
 MIDDLEWARE = [
@@ -141,7 +148,7 @@ LANGUAGES = (
 LANGUAGE_CODE = "en"
 
 LOCALE_PATHS = (
-    os.path.join(BASE_DIR, "locale/")
+    os.path.join(BASE_DIR, "locale/"),
 )
 
 TIME_ZONE = "UTC"
@@ -149,6 +156,17 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
+
+PARLER_LANGUAGES = {
+    None: (
+        {"code": "en"},
+        {"code": "de"},
+    ),
+    "default": {
+        "fallback": "en",
+        "hide_untranslated": False,
+    }
+}
 
 
 # Static files (CSS, JavaScript, Images)

@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-18 21:29+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2022-04-26 21:52+0200\n"
+"PO-Revision-Date: 2022-04-26 19:52+0000\n"
+"Last-Translator:   <droko@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
 
 #: cart/forms.py:9
 msgid "quantity"
@@ -26,36 +27,72 @@ msgstr "Anzahl"
 msgid "Coupon"
 msgstr "Coupon"
 
-#: online_shop/settings.py:137
+#: online_shop/settings.py:140
 msgid "English"
 msgstr "Englisch"
 
-#: online_shop/settings.py:138
+#: online_shop/settings.py:141
 msgid "German"
 msgstr "Deutsch"
 
+#: online_shop/urls.py:26
+msgid "cart/"
+msgstr "einkaufswagen/"
+
+#: online_shop/urls.py:27
+msgid "orders/"
+msgstr "bestellungen/"
+
+#: online_shop/urls.py:28
+msgid "payment/"
+msgstr "bezahlen/"
+
+#: online_shop/urls.py:29
+msgid "coupons/"
+msgstr "coupons/"
+
+#: payment/urls.py:9
+msgid "process/"
+msgstr "verarbeitung/"
+
+#: payment/urls.py:10
+msgid "done/"
+msgstr "fertig/"
+
+#: payment/urls.py:11
+msgid "cancelled/"
+msgstr "abgebrochen/"
+
 #: shop/templates/shop/base.html:7 shop/templates/shop/base.html:12
 msgid "My shop"
-msgstr "Meine Shop"
+msgstr "Mein Shop"
 
-#: shop/templates/shop/base.html:18
+#: shop/templates/shop/base.html:17
+msgid "Language"
+msgstr "Sprache"
+
+#: shop/templates/shop/base.html:33
 msgid "Your cart"
 msgstr "Ihr Einkaufswagen"
 
-#: shop/templates/shop/base.html:20
+#: shop/templates/shop/base.html:35
 #, python-format
 msgid ""
 "\n"
-"                            %(items)s item, $%(total)s,\n"
-"                        "
+"                        %(items)s item, $%(total)s,\n"
+"                    "
 msgid_plural ""
 "\n"
-"                            %(items)s items, $%(total)s\n"
-"                        "
+"                        %(items)s items, $%(total)s\n"
+"                    "
 msgstr[0] ""
+"\n"
+"%(items)s Artikel, $%(total)s,"
 msgstr[1] ""
+"\n"
+"%(items)s Artikel, $%(total)s,"
 
-#: shop/templates/shop/base.html:27
+#: shop/templates/shop/base.html:42
 msgid "Your cart is empty."
 msgstr "Ihr Einkaufswagen ist leer."
 
